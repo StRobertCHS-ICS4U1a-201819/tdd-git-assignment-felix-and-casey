@@ -1,27 +1,27 @@
 # Central Tendency Functions
 
-def mean():
+def mean(intList):
     return 1
 
-def mode():
+def mode(intList):
     return 1
 
-def median():
+def median(intList):
     return 1
 
 # Spread Functions
 
-def range():
+def range(intList):
     return 1
 
-def lwrQuartile():
+def lwrQuartile(intList):
     return 1
 
-def uprQuartile():
+def uprQuartile(intList):
     return 1
 
-def variance():
+def variance(intList):
     return 1
 
-def stdDeviation():
+def stdDeviation(intList):
     return 1
