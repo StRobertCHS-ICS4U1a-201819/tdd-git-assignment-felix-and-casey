@@ -1,3 +1,6 @@
+from statTools import *
+import pytest
+
 # Test 1:
 intList1 = []
 
