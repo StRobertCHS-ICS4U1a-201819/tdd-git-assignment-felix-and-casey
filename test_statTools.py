@@ -23,3 +23,6 @@ cornerList2 = [-1, 0, 1, 3, 5, 6, 8, 9]
 # Testing Methods:
 def test_meanB1():
     assert (5.5 == mean(intList1))
+
+def test_meanB2():
+    assert (-10.1 == mean(intList2))
