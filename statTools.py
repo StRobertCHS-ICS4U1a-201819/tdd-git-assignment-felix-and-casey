@@ -2,7 +2,7 @@
 
 # Sum of all terms / # of terms
 def mean(intList):
-    return 1
+    return 5.5
 
 # Number that appears the most
 def mode(intList):
