@@ -8,7 +8,7 @@ intList1 = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10]
 intList2 = [-100, -69, -34, -10, -10, -1, 2, 10, 11, 100]
 
 # Test 3: Non-sorted list:
-intList3 = [9,1,3, 8, 0, 5, 2, 2, 6, 2, 2]
+intList3 = [9, 1, 3, 8, 0, 5, 2, 2, 6, 2, 2]
 
 # Test 4: Non-sorted W negatives:
 intList4 = [5, 5, -5, 5, -5, 10, -9, 7, 8, 1, 3]
@@ -43,3 +43,24 @@ def test_meanC2():
 
 def test_meanC3():
     assert (0 == mean(cornerList3))
+
+def test_modeB1():
+    assert ([8] == mode(intList1))
+
+def test_modeB2():
+    assert ([-10] == mode(intList2))
+
+def test_modeB3():
+    assert ([2] == mode(intList3))
+
+def test_modeB4():
+    assert ([5] == mode(intList4))
+
+def test_modeC1():
+    assert ([] == mode(cornerList1))
+
+def test_modeC2():
+    assert ([-1, 0, 1, 3, 5, 6, 8, 9] == mode(cornerList2))
+
+def test_modeC3():
+    assert ([0] == mode(cornerList3))
