@@ -10,6 +10,7 @@ def mean(intList):
 
 # Number that appears the most
 def mode(intList):
+    if intList == []: return []
     counter = {}
     for i in intList:
         if (i in counter.keys()): counter[i] = counter.get(i) + 1
