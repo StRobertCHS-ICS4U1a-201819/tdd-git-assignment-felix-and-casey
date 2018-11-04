@@ -10,7 +10,17 @@ def mean(intList):
 
 # Number that appears the most
 def mode(intList):
-    return 1
+    counter = {}
+    for i in intList:
+        if (i in counter.keys()): counter[i] = counter.get(i) + 1
+        else: counter[i] = 1
+    maxOcc = counter.get(intList[0])
+    for i in counter:
+        if (counter.get(i) > maxOcc): maxOcc = counter.get(i)
+    returnList = []
+    for i in counter:
+        if (counter.get(i) == maxOcc): returnList.append(i)
+    return returnList
 
 # Middle number of the sorted list
 def median(intList):
