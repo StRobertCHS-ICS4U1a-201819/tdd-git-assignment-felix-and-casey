@@ -24,7 +24,7 @@ cornerList3 = [0]
 
 # Testing Methods:
 def test_meanB1():
-    assert (5.5 == mean(intList1))
+    assert (63/11 == mean(intList1))
 
 def test_meanB2():
     assert (-10.1 == mean(intList2))
