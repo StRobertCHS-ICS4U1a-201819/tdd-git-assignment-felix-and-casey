@@ -5,6 +5,7 @@ def mean(intList):
     sum = 0
     for i in intList:
         sum += i
+    if (len(intList) == 0): return 0
     return sum / len(intList)
 
 # Number that appears the most
