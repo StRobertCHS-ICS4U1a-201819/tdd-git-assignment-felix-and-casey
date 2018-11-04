@@ -22,7 +22,7 @@ cornerList2 = [-1, 0, 1, 3, 5, 6, 8, 9]
 # Corner 3: No lower/upper quartile:
 cornerList3 = [0]
 
-# Testing Methods:
+# Mean Tests:
 def test_meanB1():
     assert (63/11 == mean(intList1))
 
@@ -44,6 +44,7 @@ def test_meanC2():
 def test_meanC3():
     assert (0 == mean(cornerList3))
 
+# Mode Tests:
 def test_modeB1():
     assert ([8] == mode(intList1))
 
@@ -64,3 +65,10 @@ def test_modeC2():
 
 def test_modeC3():
     assert ([0] == mode(cornerList3))
+
+# Median Tests:
+# Range Tests:
+# Lower Quartile Tests:
+# Upper Quartile Tests:
+# Variance Tests:
+# Standard Deviation Tests:
