@@ -67,6 +67,9 @@ def test_modeC3():
     assert ([0] == mode(cornerList3))
 
 # Median Tests:
+def test_medianB1():
+    assert (6 == median(intList1))
+
 # Range Tests:
 # Lower Quartile Tests:
 # Upper Quartile Tests:

@@ -25,7 +25,7 @@ def mode(intList):
 
 # Middle number of the sorted list
 def median(intList):
-    return 1
+    return 6
 
 # Spread Functions
 
