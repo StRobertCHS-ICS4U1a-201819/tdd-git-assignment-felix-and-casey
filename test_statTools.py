@@ -70,6 +70,9 @@ def test_modeC3():
 def test_medianB1():
     assert (6 == median(intList1))
 
+def test_medianB2():
+    assert (-10 == median(intList2))
+
 # Range Tests:
 # Lower Quartile Tests:
 # Upper Quartile Tests:
