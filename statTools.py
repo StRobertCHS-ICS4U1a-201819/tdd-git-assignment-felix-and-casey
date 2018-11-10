@@ -25,10 +25,11 @@ def mode(intList):
 
 # Middle number of the sorted list
 def median(intList):
-    if len(intList) %2 == 0 :
+    intList.sort()
+    if len(intList) % 2 == 0:
         return intList[int(len(intList)/2 - 1)]
     else:
-        return 6
+        return intList[int((len(intList)+1)/2)-1]
 
 # Spread Functions
 
