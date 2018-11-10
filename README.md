@@ -7,7 +7,7 @@
 
 ## Felix:
 - [x] Mean
-- [ ] Mode
+- [x] Mode
 - [ ] Upper Quartile
 - [ ] Variance
 
