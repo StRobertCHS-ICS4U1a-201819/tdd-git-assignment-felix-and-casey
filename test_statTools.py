@@ -122,6 +122,9 @@ def test_lwrQuartileB2():
 def test_lwrQuartileB3():
     assert (2 == lwrQuartile(intList3))
 
+def test_lwrQuartileB4():
+    assert (-5 == lwrQuartile(intList4))
+
 # Upper Quartile Tests:
 # Variance Tests:
 # Standard Deviation Tests:
