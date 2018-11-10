@@ -57,7 +57,7 @@ def lwrQuartile(intList):
         if len(intList[:int(median)]) % 2 == 0:
             return intList[int(len(intList[:int(median)])/2 - 1)]
         else:
-            return intList[(len(intList[:median]) + 1) / 2]
+            return intList[int(len(intList[:int(median)]) / 2)]
     else:
         median += (len(intList)+1)/2 - 1
         if len(intList[:int(len(intList) / 2 - 1)]) % 2 == 0:
