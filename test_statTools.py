@@ -24,6 +24,8 @@ cornerList2 = [-1, 0, 1, 3, 5, 6, 8, 9]
 # Corner 3: No lower/upper quartile:
 cornerList3 = [0]
 
+# Completed cases
+'''
 # Mean Tests:
 def test_meanB1():
     assert (63/11 == mean(intList1))
@@ -133,6 +135,7 @@ def test_lwrQuartileC2():
 
 def test_lwrQuartileC3():
     assert (0 == lwrQuartile(cornerList3))
+'''
 # Upper Quartile Tests:
 # Variance Tests:
 # Standard Deviation Tests:
