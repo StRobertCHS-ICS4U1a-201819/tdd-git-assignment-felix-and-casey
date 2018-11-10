@@ -26,7 +26,9 @@ def mode(intList):
 # Middle number of the sorted list
 def median(intList):
     intList.sort()
-    if len(intList) % 2 == 0:
+    if len(intList) == 0:
+        return "This is an empty list"
+    elif len(intList) % 2 == 0:
         return intList[int(len(intList)/2 - 1)]
     else:
         return intList[int((len(intList)+1)/2)-1]

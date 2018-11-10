@@ -80,6 +80,9 @@ def test_medianB3():
 
 def test_medianB4():
     assert (5 == median(intList4))
+
+def test_medianC1():
+    assert("This is an empty list" == median(cornerList1))
 # Range Tests:
 # Lower Quartile Tests:
 # Upper Quartile Tests:
