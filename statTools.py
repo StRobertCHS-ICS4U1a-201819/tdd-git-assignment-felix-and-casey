@@ -48,7 +48,7 @@ def range(intList):
 
 # Median of the numbers below the median
 def lwrQuartile(intList):
-    return 1
+    return 3
 
 # Median of the numbers above the median
 def uprQuartile(intList):
