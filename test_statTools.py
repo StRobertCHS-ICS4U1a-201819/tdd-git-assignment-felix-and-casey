@@ -108,6 +108,9 @@ def test_rangeC1():
 
 def test_rangeC2():
     assert (10 == range(cornerList2))
+
+def test_rangeC3():
+    assert (0 == range(cornerList3))
 # Lower Quartile Tests:
 # Upper Quartile Tests:
 # Variance Tests:
