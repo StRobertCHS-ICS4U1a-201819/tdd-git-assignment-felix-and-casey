@@ -111,7 +111,28 @@ def test_rangeC2():
 
 def test_rangeC3():
     assert (0 == range(cornerList3))
+
 # Lower Quartile Tests:
+def test_lwrQuartileB1():
+    assert (3 == lwrQuartile(intList1))
+
+def test_lwrQuartileB2():
+    assert (-69 == lwrQuartile(intList2))
+
+def test_lwrQuartileB3():
+    assert (2 == lwrQuartile(intList3))
+
+def test_lwrQuartileB4():
+    assert (-5 == lwrQuartile(intList4))
+
+def test_lwrQuartileC1():
+    assert ("This is an empty list" == lwrQuartile(cornerList1))
+
+def test_lwrQuartileC2():
+    assert (0 == lwrQuartile(cornerList2))
+
+def test_lwrQuartileC3():
+    assert (0 == lwrQuartile(cornerList3))
 # Upper Quartile Tests:
 # Variance Tests:
 # Standard Deviation Tests:
