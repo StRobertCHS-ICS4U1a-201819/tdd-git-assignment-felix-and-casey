@@ -125,6 +125,8 @@ def test_lwrQuartileB3():
 def test_lwrQuartileB4():
     assert (-5 == lwrQuartile(intList4))
 
+def test_lwrQuartileC1():
+    assert ("This is an empty list" == lwrQuartile(cornerList1))
 # Upper Quartile Tests:
 # Variance Tests:
 # Standard Deviation Tests:

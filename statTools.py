@@ -50,7 +50,9 @@ def range(intList):
 def lwrQuartile(intList):
     intList.sort()
     median = 0
-    if len(intList) % 2 == 0:
+    if len(intList) == 0:
+        return "This is an empty list"
+    elif len(intList) % 2 == 0:
         median += len(intList)/2 - 1
         if len(intList[:int(median)]) % 2 == 0:
             return intList[int(len(intList[:int(median)])/2 - 1)]
