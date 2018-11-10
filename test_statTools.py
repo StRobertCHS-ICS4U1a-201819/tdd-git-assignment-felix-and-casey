@@ -58,7 +58,7 @@ def test_modeB4():
     assert ([5] == mode(intList4))
 
 def test_modeC1():
-    assert ([] == mode(cornerList1))
+    assert (None == mode(cornerList1))
 
 def test_modeC2():
     assert ([-1, 0, 1, 3, 5, 6, 8, 9] == mode(cornerList2))

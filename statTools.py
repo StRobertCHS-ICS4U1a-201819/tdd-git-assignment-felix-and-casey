@@ -1,7 +1,7 @@
 # Central Tendency Functions
 
 # Sum of all terms / # of terms
-def mean(intList):
+def mean(intList): # Refactor this one
     sum = 0
     for i in intList:
         sum += i
@@ -10,18 +10,19 @@ def mean(intList):
 
 # Number that appears the most
 def mode(intList):
-    if intList == []: return []
-    counter = {}
-    for i in intList:
-        if (i in counter.keys()): counter[i] = counter.get(i) + 1
-        else: counter[i] = 1
-    maxOcc = counter.get(intList[0])
-    for i in counter:
-        if (counter.get(i) > maxOcc): maxOcc = counter.get(i)
-    returnList = []
-    for i in counter:
-        if (counter.get(i) == maxOcc): returnList.append(i)
-    return returnList
+    try:
+        counter = {}
+        for i in intList:
+            if (i in counter.keys()): counter[i] = counter.get(i) + 1
+            else: counter[i] = 1
+        maxOcc = counter.get(intList[0])
+        for i in counter:
+            if (counter.get(i) > maxOcc): maxOcc = counter.get(i)
+        returnList = []
+        for i in counter:
+            if (counter.get(i) == maxOcc): returnList.append(i)
+        return returnList
+    except: return None
 
 # Middle number of the sorted list
 def median(intList):
