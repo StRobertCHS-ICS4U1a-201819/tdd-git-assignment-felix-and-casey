@@ -96,6 +96,15 @@ def test_rangeB1():
 
 def test_rangeB2():
     assert (200 == range(intList2))
+
+def test_rangeB3():
+    assert (9 == range(intList3))
+
+def test_rangeB4():
+    assert (19 == range(intList4))
+
+def test_rangeC1():
+    assert ("This is an empty list" == range(cornerList1))
 # Lower Quartile Tests:
 # Upper Quartile Tests:
 # Variance Tests:

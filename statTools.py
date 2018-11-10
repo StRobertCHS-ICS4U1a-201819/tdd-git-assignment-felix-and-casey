@@ -39,7 +39,12 @@ def median(intList):
 
 # Largest - Smallest
 def range(intList):
-    return intList[len(intList)-1] - intList[0]
+    intList.sort()
+    if len(intList) == 0:
+        return "This is an empty list"
+    else:
+        return intList[len(intList)-1] - intList[0]
+
 
 # Median of the numbers below the median
 def lwrQuartile(intList):
