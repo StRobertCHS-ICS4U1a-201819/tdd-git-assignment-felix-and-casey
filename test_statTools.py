@@ -86,6 +86,9 @@ def test_medianC1():
 
 def test_meidanC2():
     assert (3 == median(cornerList2))
+
+def test_medianC3():
+    assert (0 == median(cornerList3))
 # Range Tests:
 # Lower Quartile Tests:
 # Upper Quartile Tests:
