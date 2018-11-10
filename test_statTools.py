@@ -13,6 +13,7 @@ intList3 = [9, 1, 3, 8, 0, 5, 2, 2, 6, 2, 2]
 
 # Test 4: Non-sorted W negatives:
 intList4 = [5, 5, -5, 5, -5, 10, -9, 7, 8, 1, 3]
+# sorted = [-9, -5, -5, 1, 3, 5, 5, 5, 7, 8, 10]
 
 # Corner 1: Empty list:
 cornerList1 = []
@@ -77,6 +78,8 @@ def test_medianB2():
 def test_medianB3():
     assert (2 == median(intList3))
 
+def test_medianB4():
+    assert (5 == median(intList4))
 # Range Tests:
 # Lower Quartile Tests:
 # Upper Quartile Tests:
