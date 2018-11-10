@@ -1,7 +1,7 @@
  # To-do List:
 ## Casey: 
-- [ ] Median
-- [ ] Range
+- [x] Median
+- [x] Range
 - [ ] Lower Quartile
 - [ ] Standard Deviation
 
