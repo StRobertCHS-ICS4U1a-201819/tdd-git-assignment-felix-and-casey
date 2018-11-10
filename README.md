@@ -1,6 +1,15 @@
-To-do List:
-Casey: Median, Range, Lower Quartile, Standard Deviation
-Felix: Mean, Mode, Upper Quartile, Variance
+ # To-do List:
+## Casey: 
+- [ ] Median
+- [ ] Range
+- [ ] Lower Quartile
+- [ ] Standard Deviation
+
+## Felix:
+- [x] Mean
+- [ ] Mode
+- [ ] Upper Quartile
+- [ ] Variance
 
 # TDD & Git Assignment
 
