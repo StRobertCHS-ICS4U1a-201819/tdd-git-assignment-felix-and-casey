@@ -130,6 +130,9 @@ def test_lwrQuartileC1():
 
 def test_lwrQuartileC2():
     assert (0 == lwrQuartile(cornerList2))
+
+def test_lwrQuartileC3():
+    assert (0 == lwrQuartile(cornerList3))
 # Upper Quartile Tests:
 # Variance Tests:
 # Standard Deviation Tests:
