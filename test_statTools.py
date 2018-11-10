@@ -105,6 +105,9 @@ def test_rangeB4():
 
 def test_rangeC1():
     assert ("This is an empty list" == range(cornerList1))
+
+def test_rangeC2():
+    assert (10 == range(cornerList2))
 # Lower Quartile Tests:
 # Upper Quartile Tests:
 # Variance Tests:
