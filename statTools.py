@@ -22,7 +22,6 @@ def mean(intList):
     if (len(intList) == 0): return 0
     return sum(intList) / len(intList)
 
-# Number that appears the most
 def mode(intList):
     ''' Finds the number that appears the most in a list of numbers
 
@@ -43,7 +42,6 @@ def mode(intList):
         return returnList
     except: return None
 
-# Middle number of the sorted list
 def median(intList):
     ''' Finds the middle number of a sorted list
 
@@ -58,9 +56,6 @@ def median(intList):
     else:
         return intList[int((len(intList)+1)/2)-1]
 
-# Spread Functions
-
-# Largest - Smallest
 def range(intList):
     ''' Finds the difference between the largest and smallest number in a list
 
@@ -73,8 +68,6 @@ def range(intList):
     else:
         return intList[len(intList)-1] - intList[0]
 
-
-# Median of the numbers below the median
 def lwrQuartile(intList):
     ''' Finds the median of the set of numbers below the median
 
@@ -98,7 +91,6 @@ def lwrQuartile(intList):
         if len(intList[:int(len(intList) / 2 - 1)]) % 2 == 0:
             return intList[int(len(intList[:int(len(intList) / 2 - 1)]) / 2)]
 
-# Median of the numbers above the median
 def uprQuartile(intList):
     ''' Finds the median of the set of numbers above the median
 
@@ -110,7 +102,6 @@ def uprQuartile(intList):
         return median(intList[(len(intList)-1)//2 + 1:])
     except: return 'This is an empty list'
 
-# Average of the squares of the differences of each number from the mean
 def variance(intList):
     ''' Finds the average of the squares of the differences of each number from the mean
 
@@ -124,8 +115,12 @@ def variance(intList):
         return (sum / len(intList))
     except: return "This is an empty list"
 
-# Square root of the variance
 def stdDeviation(intList):
+    ''' Finds the square root of the variance
+
+        :param intList: The list of integers to find the standard deviation from
+        :return: The standard deviation
+    '''
     try:
         return math.sqrt(variance(intList))
     except: return 'This is an empty list'
