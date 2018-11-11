@@ -14,34 +14,26 @@ Created:		11/11/2018
 
 # Test 1: Sorted:
 intList1 = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10]
-# Variance Should be: 8.0165289256198
 
 # Test 2: Sorted W negatives:
 intList2 = [-100, -69, -34, -10, -10, -1, 2, 10, 11, 100]
-# Variance should be: 2532.29
 
 # Test 3: Non-sorted list:
 intList3 = [9, 1, 3, 8, 0, 5, 2, 2, 6, 2, 2]
-# Variance Should be: 7.8677685950413
 
 # Test 4: Non-sorted W negatives:
 intList4 = [5, 5, -5, 5, -5, 10, -9, 7, 8, 1, 3]
-# Variance Should be: 33.834710743802
 
 # Corner 1: Empty list:
 cornerList1 = []
-# Variance should be: "This is an empty list"
 
 # Corner 2: Multiple mode:
 cornerList2 = [-1, 0, 1, 3, 5, 6, 8, 9]
-# Variance should be: 12.109375
 
 # Corner 3: No lower/upper quartile:
 cornerList3 = [0]
-# Variance should be: 0
 
-# Completed Tests
-'''
+
 # Mean Tests:
 def test_meanB1():
     assert (63/11 == mean(intList1))
@@ -64,6 +56,7 @@ def test_meanC2():
 def test_meanC3():
     assert (0 == mean(cornerList3))
 
+
 # Mode Tests:
 def test_modeB1():
     assert ([8] == mode(intList1))
@@ -85,6 +78,8 @@ def test_modeC2():
 
 def test_modeC3():
     assert ([0] == mode(cornerList3))
+
+
 # Median Tests:
 def test_medianB1():
     assert (6 == median(intList1))
@@ -106,6 +101,8 @@ def test_medianC2():
 
 def test_medianC3():
     assert (0 == median(cornerList3))
+
+
 # Range Tests:
 def test_rangeB1():
     assert (9 == range(intList1))
@@ -128,6 +125,7 @@ def test_rangeC2():
 def test_rangeC3():
     assert (0 == range(cornerList3))
 
+
 # Lower Quartile Tests:
 def test_lwrQuartileB1():
     assert (3 == lwrQuartile(intList1))
@@ -149,6 +147,8 @@ def test_lwrQuartileC2():
 
 def test_lwrQuartileC3():
     assert (0 == lwrQuartile(cornerList3))
+
+
 # Upper Quartile Tests:
 def test_uprQuartileB1():
     assert (8 == uprQuartile(intList1))
@@ -193,7 +193,7 @@ def test_varianceC2():
 
 def test_varianceC3():
     assert (0 == variance(cornerList3))
-'''
+
 
 # Standard Deviation Tests:
 def test_stdDeviationB1():
