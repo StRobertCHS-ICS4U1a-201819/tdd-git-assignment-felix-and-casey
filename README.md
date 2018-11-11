@@ -9,7 +9,7 @@
 - [x] Mean
 - [x] Mode
 - [x] Upper Quartile
-- [ ] Variance
+- [x] Variance
 
 # TDD & Git Assignment
 
