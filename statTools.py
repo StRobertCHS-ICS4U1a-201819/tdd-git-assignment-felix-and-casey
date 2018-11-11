@@ -27,14 +27,18 @@ def mode(intList):
         :return: The mode
     '''
     try:
+        # Initializing a dictionary to store values
         counter = {}
+        # Counts the occurrences of each number in intList
         for i in intList:
             if (i in counter.keys()): counter[i] = counter.get(i) + 1
             else: counter[i] = 1
         maxOcc = counter.get(intList[0])
+        # Checks for the maximum number of occurrences
         for i in counter:
             if (counter.get(i) > maxOcc): maxOcc = counter.get(i)
         returnList = []
+        # Appends the keys with the max occurrences into a return list
         for i in counter:
             if (counter.get(i) == maxOcc): returnList.append(i)
         return returnList
@@ -108,8 +112,10 @@ def variance(intList):
     '''
     try:
         sum = 0
+        # Adding the difference of each number to the mean squared
         for i in intList:
             sum += (i - mean(intList)) ** 2
+        # Averaging the sum variable
         return (sum / len(intList))
     except: return "This is an empty list"
 

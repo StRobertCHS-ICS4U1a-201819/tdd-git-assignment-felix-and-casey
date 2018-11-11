@@ -1,5 +1,4 @@
 from statTools import *
-import pytest
 """
 -------------------------------------------------------------------------------
 Name:		test_statTools.py
