@@ -176,4 +176,7 @@ def test_varianceB4():
 
 def test_varianceC1():
     assert ("This is an empty list" == variance(cornerList1))
+
+def test_varianceC2():
+    assert (12.109375 == variance(cornerList2))
 # Standard Deviation Tests:
