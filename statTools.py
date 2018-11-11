@@ -1,5 +1,5 @@
 # Central Tendency Functions
-
+import math
 # Sum of all terms / # of terms
 def mean(intList): # Refactor this one
     if (len(intList) == 0): return 0
@@ -79,4 +79,4 @@ def variance(intList):
 
 # Square root of the variance
 def stdDeviation(intList):
-    return 1
+    return math.sqrt(variance(intList))

@@ -1,6 +1,7 @@
 from statTools import *
 import pytest
 
+
 # Test 1: Sorted:
 intList1 = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10]
 # Variance Should be: 8.0165289256198
@@ -159,7 +160,7 @@ def test_uprQuartileC2():
 
 def test_uprQuartileC3():
     assert ('This is an empty list' == uprQuartile(cornerList3))
-'''
+
 
 # Variance Tests:
 def test_varianceB1():
@@ -182,4 +183,8 @@ def test_varianceC2():
 
 def test_varianceC3():
     assert (0 == variance(cornerList3))
+'''
+
 # Standard Deviation Tests:
+def test_stdDeviationB1():
+    assert (math.sqrt(8.016528925619836) == stdDeviation(intList1))
