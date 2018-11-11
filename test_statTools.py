@@ -200,3 +200,6 @@ def test_stdDeviationB4():
 
 def test_stdDeviationC1():
     assert ("This is an empty list" == stdDeviation(cornerList1))
+
+def test_stdDeviationC2():
+    assert (math.sqrt(12.109375) == stdDeviation(cornerList2))
