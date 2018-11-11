@@ -23,6 +23,7 @@ cornerList2 = [-1, 0, 1, 3, 5, 6, 8, 9]
 cornerList3 = [0]
 
 # Completed Tests
+'''
 # Mean Tests:
 def test_meanB1():
     assert (63/11 == mean(intList1))
@@ -130,6 +131,7 @@ def test_lwrQuartileC2():
 
 def test_lwrQuartileC3():
     assert (0 == lwrQuartile(cornerList3))
+'''
 # Upper Quartile Tests:
 def test_uprQuartileB1():
     assert (8 == uprQuartile(intList1))
@@ -148,5 +150,8 @@ def test_uprQuartileC1():
 
 def test_uprQuartileC2():
     assert (7 == uprQuartile(cornerList2))
+
+def test_uprQuartileC3():
+    assert ('This is an empty list' == uprQuartile(cornerList3))
 # Variance Tests:
 # Standard Deviation Tests:

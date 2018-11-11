@@ -65,7 +65,6 @@ def lwrQuartile(intList):
 def uprQuartile(intList):
     try:
         intList.sort()
-        print(intList[(len(intList)-1)//2 + 1:])
         return median(intList[(len(intList)-1)//2 + 1:])
     except: return 'This is an empty list'
 
