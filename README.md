@@ -1,14 +1,14 @@
  # To-do List:
 ## Casey: 
 - [x] Median
-- [x] Range
+- [ ] Range <-- Needs fix
 - [ ] Lower Quartile
 - [ ] Standard Deviation
 
 ## Felix:
 - [x] Mean
 - [x] Mode
-- [ ] Upper Quartile
+- [x] Upper Quartile
 - [ ] Variance
 
 # TDD & Git Assignment
