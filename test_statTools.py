@@ -195,3 +195,5 @@ def test_stdDeviationB2():
 def test_stdDeviationB3():
     assert (math.sqrt(7.86776859504132) == stdDeviation(intList3))
 
+def test_stdDeviationB4():
+    assert (math.sqrt(33.83471074380165) == stdDeviation(intList4))
