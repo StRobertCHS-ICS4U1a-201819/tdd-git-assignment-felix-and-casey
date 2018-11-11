@@ -188,7 +188,7 @@ def test_varianceB2():
     assert (2532.29 == variance(intList2))
 
 def test_varianceB3():
-    assert (7.86776859504132 == variance(intList3))
+    assert (7.867768595041323 == variance(intList3))
 
 def test_varianceB4():
     assert (33.83471074380165 == variance(intList4))
@@ -211,16 +211,16 @@ def test_stdDeviationB2():
     assert (50.321864035426984 == stdDeviation(intList2))
 
 def test_stdDeviationB3():
-    assert (math.sqrt(7.86776859504132) == stdDeviation(intList3))
+    assert (2.8049542946439114 == stdDeviation(intList3))
 
 def test_stdDeviationB4():
-    assert (math.sqrt(33.83471074380165) == stdDeviation(intList4))
+    assert (33.83471074380165 ** 0.5 == stdDeviation(intList4))
 
 def test_stdDeviationC1():
     assert ("This is an empty list" == stdDeviation(cornerList1))
 
 def test_stdDeviationC2():
-    assert (math.sqrt(12.109375) == stdDeviation(cornerList2))
+    assert (12.109375 ** 0.5 == stdDeviation(cornerList2))
 
 def test_stdDeviatiomC3():
     assert (0 == stdDeviation(cornerList3))

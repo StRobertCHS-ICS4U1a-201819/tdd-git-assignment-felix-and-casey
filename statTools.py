@@ -16,8 +16,9 @@ def mean(intList):
         :param intList: The list of integers to find the mean from
         :return: The mean
     '''
-    if (len(intList) == 0): return 0
-    return sum(intList) / len(intList)
+    try:
+        return sum(intList) / len(intList)
+    except: return 0
 
 def mode(intList):
     ''' Finds the number that appears the most in a list of numbers
