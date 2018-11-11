@@ -1,5 +1,18 @@
 # Central Tendency Functions
 import math
+
+"""
+-------------------------------------------------------------------------------
+Name:		statTools.py
+Purpose:		
+This program contains the central tendency functions.
+
+Authors:		Yang.F, Li. C
+
+Created:		11/11/2018
+------------------------------------------------------------------------------
+"""
+
 # Sum of all terms / # of terms
 def mean(intList): # Refactor this one
     if (len(intList) == 0): return 0

@@ -1,6 +1,16 @@
 from statTools import *
 import pytest
+"""
+-------------------------------------------------------------------------------
+Name:		test_statTools.py
+Purpose:		
+This program runs tests on the functions that are found in the statTools.py file
 
+Authors:		Yang.F, Li. C
+
+Created:		11/11/2018
+------------------------------------------------------------------------------
+"""
 
 # Test 1: Sorted:
 intList1 = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10]
