@@ -65,7 +65,7 @@ def lwrQuartile(intList):
 
 # Median of the numbers above the median
 def uprQuartile(intList):
-    return 1
+    return 8
 
 # Average of the squares of the differences of each number from the mean
 def variance(intList):
