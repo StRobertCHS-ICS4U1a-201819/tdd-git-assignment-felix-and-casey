@@ -143,5 +143,7 @@ def test_uprQuartileB2():
 def test_uprQuartileB3():
     assert (6 == uprQuartile(intList3))
 
+def test_uprQuartileB4():
+    assert (7 == uprQuartile(intList4))
 # Variance Tests:
 # Standard Deviation Tests:
