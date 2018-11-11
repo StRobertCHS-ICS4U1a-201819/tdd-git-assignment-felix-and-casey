@@ -187,8 +187,11 @@ def test_varianceC3():
 
 # Standard Deviation Tests:
 def test_stdDeviationB1():
-    assert (math.sqrt(8.016528925619836) == stdDeviation(intList1))
+    assert (2.831347545890443 == stdDeviation(intList1))
 
 def test_stdDeviationB2():
-    assert(math.sqrt(2532.29) == stdDeviation(intList2))
+    assert (50.321864035426984 == stdDeviation(intList2))
+
+def test_stdDeviationB3():
+    assert (math.sqrt(7.86776859504132) == stdDeviation(intList3))
 
