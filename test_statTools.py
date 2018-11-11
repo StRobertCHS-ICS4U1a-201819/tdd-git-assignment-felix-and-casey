@@ -170,4 +170,7 @@ def test_varianceB2():
 
 def test_varianceB3():
     assert (7.86776859504132 == variance(intList3))
+
+def test_varianceB4():
+    assert (33.83471074380165 == variance(intList4))
 # Standard Deviation Tests:
