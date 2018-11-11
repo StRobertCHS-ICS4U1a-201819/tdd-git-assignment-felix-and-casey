@@ -179,4 +179,7 @@ def test_varianceC1():
 
 def test_varianceC2():
     assert (12.109375 == variance(cornerList2))
+
+def test_varianceC3():
+    assert (0 == variance(cornerList3))
 # Standard Deviation Tests:
