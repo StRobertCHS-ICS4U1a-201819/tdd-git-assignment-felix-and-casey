@@ -2,7 +2,7 @@
 ## Casey: 
 - [x] Median
 - [ ] Range <-- Needs fix
-- [ ] Lower Quartile
+- [x] Lower Quartile
 - [ ] Standard Deviation
 
 ## Felix:
