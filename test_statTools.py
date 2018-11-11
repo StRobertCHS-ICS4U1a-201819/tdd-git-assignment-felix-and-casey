@@ -23,7 +23,6 @@ cornerList2 = [-1, 0, 1, 3, 5, 6, 8, 9]
 cornerList3 = [0]
 
 # Completed Tests
-'''
 # Mean Tests:
 def test_meanB1():
     assert (63/11 == mean(intList1))
@@ -72,7 +71,7 @@ def test_medianB1():
     assert (6 == median(intList1))
 
 def test_medianB2():
-    assert (-10 == median(intList2))
+    assert (-11/2 == median(intList2))
 
 def test_medianB3():
     assert (2 == median(intList3))
@@ -84,7 +83,7 @@ def test_medianC1():
     assert ("This is an empty list" == median(cornerList1))
 
 def test_medianC2():
-    assert (3 == median(cornerList2))
+    assert (4 == median(cornerList2))
 
 def test_medianC3():
     assert (0 == median(cornerList3))
@@ -131,7 +130,6 @@ def test_lwrQuartileC2():
 
 def test_lwrQuartileC3():
     assert (0 == lwrQuartile(cornerList3))
-'''
 # Upper Quartile Tests:
 def test_uprQuartileB1():
     assert (8 == uprQuartile(intList1))

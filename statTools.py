@@ -26,10 +26,8 @@ def median(intList):
     intList.sort()
     if len(intList) == 0:
         return "This is an empty list"
-    elif len(intList) == 1:
-        return intList[0]
     elif len(intList) % 2 == 0:
-        return intList[int(len(intList)/2 - 1)]
+        return (intList[int(len(intList)/2)] + intList[int(len(intList)/2-1)]) / 2
     else:
         return intList[int((len(intList)+1)/2)-1]
 
