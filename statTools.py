@@ -71,10 +71,9 @@ def uprQuartile(intList):
 # Average of the squares of the differences of each number from the mean
 def variance(intList):
     try:
-        m1 = mean(intList)
         sum = 0
         for i in intList:
-            sum += (i - m1)**2
+            sum += (i - mean(intList))**2
         return (sum / len(intList))
     except: return "This is an empty list"
 
