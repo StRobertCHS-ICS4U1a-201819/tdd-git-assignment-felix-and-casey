@@ -203,3 +203,6 @@ def test_stdDeviationC1():
 
 def test_stdDeviationC2():
     assert (math.sqrt(12.109375) == stdDeviation(cornerList2))
+
+def test_stdDeviatiomC3():
+    assert (0 == stdDeviation(cornerList3))
