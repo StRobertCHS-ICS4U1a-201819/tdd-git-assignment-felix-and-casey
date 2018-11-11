@@ -1,7 +1,7 @@
  # To-do List:
 ## Casey: 
 - [x] Median
-- [ ] Range <-- Needs fix (Can you check the issue tab ---- Casey) Check the issues tab, I put the details there
+- [x] Range
 - [x] Lower Quartile
 - [x] Standard Deviation
 
