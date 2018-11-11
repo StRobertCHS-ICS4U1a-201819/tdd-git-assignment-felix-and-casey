@@ -79,4 +79,6 @@ def variance(intList):
 
 # Square root of the variance
 def stdDeviation(intList):
-    return math.sqrt(variance(intList))
+    try:
+        return math.sqrt(variance(intList))
+    except: return 'This is an empty list'
