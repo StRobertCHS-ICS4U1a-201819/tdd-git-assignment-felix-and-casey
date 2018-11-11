@@ -13,13 +13,22 @@ Created:		11/11/2018
 ------------------------------------------------------------------------------
 """
 
-# Sum of all terms / # of terms
-def mean(intList): # Refactor this one
+def mean(intList):
+    ''' Finds the sum of all the terms / # of terms
+
+        :param intList: The list of integers to find the mean from
+        :return: The mean
+    '''
     if (len(intList) == 0): return 0
     return sum(intList) / len(intList)
 
 # Number that appears the most
 def mode(intList):
+    ''' Finds the number that appears the most in a list of numbers
+
+        :param intList: The list of integers to find the mode from
+        :return: The mode
+    '''
     try:
         counter = {}
         for i in intList:
@@ -36,6 +45,11 @@ def mode(intList):
 
 # Middle number of the sorted list
 def median(intList):
+    ''' Finds the middle number of a sorted list
+
+        :param intList: The list of integers to find the median from
+        :return: The median
+    '''
     intList.sort()
     if len(intList) == 0:
         return "This is an empty list"
@@ -48,6 +62,11 @@ def median(intList):
 
 # Largest - Smallest
 def range(intList):
+    ''' Finds the difference between the largest and smallest number in a list
+
+        :param intList: The list of integers to find the range from
+        :return: The range
+    '''
     intList.sort()
     if len(intList) == 0:
         return "This is an empty list"
@@ -57,6 +76,11 @@ def range(intList):
 
 # Median of the numbers below the median
 def lwrQuartile(intList):
+    ''' Finds the median of the set of numbers below the median
+
+        :param intList: The list of integers to find the lower quartile from
+        :return: The lower quartile
+    '''
     intList.sort()
     median = 0
     if len(intList) == 0:
@@ -76,6 +100,11 @@ def lwrQuartile(intList):
 
 # Median of the numbers above the median
 def uprQuartile(intList):
+    ''' Finds the median of the set of numbers above the median
+
+        :param intList: The list of integers to find the upper quartile from
+        :return: The upper quartile
+    '''
     try:
         intList.sort()
         return median(intList[(len(intList)-1)//2 + 1:])
@@ -83,6 +112,11 @@ def uprQuartile(intList):
 
 # Average of the squares of the differences of each number from the mean
 def variance(intList):
+    ''' Finds the average of the squares of the differences of each number from the mean
+
+        :param intList: The list of integers to find the variance from
+        :return: The variance
+    '''
     try:
         sum = 0
         for i in intList:
