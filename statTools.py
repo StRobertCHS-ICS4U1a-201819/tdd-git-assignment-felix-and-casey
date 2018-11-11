@@ -1,6 +1,3 @@
-# Central Tendency Functions
-import math
-
 """
 -------------------------------------------------------------------------------
 Name:		statTools.py
@@ -52,9 +49,9 @@ def median(intList):
     if len(intList) == 0:
         return "This is an empty list"
     elif len(intList) % 2 == 0:
-        return (intList[int(len(intList)/2)] + intList[int(len(intList)/2-1)]) / 2
+        return (intList[int(len(intList) / 2)] + intList[int(len(intList) / 2 - 1)]) / 2
     else:
-        return intList[int((len(intList)+1)/2)-1]
+        return intList[int((len(intList) + 1) / 2) - 1]
 
 def range(intList):
     ''' Finds the difference between the largest and smallest number in a list
@@ -66,7 +63,7 @@ def range(intList):
     if len(intList) == 0:
         return "This is an empty list"
     else:
-        return intList[len(intList)-1] - intList[0]
+        return intList[len(intList) - 1] - intList[0]
 
 def lwrQuartile(intList):
     ''' Finds the median of the set of numbers below the median
@@ -81,13 +78,13 @@ def lwrQuartile(intList):
     elif len(intList) == 1:
         return intList[0]
     elif len(intList) % 2 == 0:
-        median += len(intList)/2 - 1
+        median += len(intList) / 2 - 1
         if len(intList[:int(median)]) % 2 == 0:
-            return intList[int(len(intList[:int(median)])/2 - 1)]
+            return intList[int(len(intList[:int(median)]) / 2 - 1)]
         else:
             return intList[int(len(intList[:int(median)]) / 2)]
     else:
-        median += (len(intList)+1)/2 - 1
+        median += (len(intList) + 1) / 2 - 1
         if len(intList[:int(len(intList) / 2 - 1)]) % 2 == 0:
             return intList[int(len(intList[:int(len(intList) / 2 - 1)]) / 2)]
 
@@ -99,7 +96,7 @@ def uprQuartile(intList):
     '''
     try:
         intList.sort()
-        return median(intList[(len(intList)-1)//2 + 1:])
+        return median(intList[(len(intList) - 1) // 2 + 1:])
     except: return 'This is an empty list'
 
 def variance(intList):
@@ -111,7 +108,7 @@ def variance(intList):
     try:
         sum = 0
         for i in intList:
-            sum += (i - mean(intList))**2
+            sum += (i - mean(intList)) ** 2
         return (sum / len(intList))
     except: return "This is an empty list"
 
@@ -122,5 +119,5 @@ def stdDeviation(intList):
         :return: The standard deviation
     '''
     try:
-        return math.sqrt(variance(intList))
+        return variance(intList) ** 0.5
     except: return 'This is an empty list'
