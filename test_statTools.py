@@ -163,5 +163,8 @@ def test_uprQuartileC3():
 
 # Variance Tests:
 def test_varianceB1():
-    assert (8.0165289256198 == variance(intList1))
+    assert (8.016528925619836 == variance(intList1))
+
+def test_varianceB2():
+    assert (2532.29 == variance(intList2))
 # Standard Deviation Tests:

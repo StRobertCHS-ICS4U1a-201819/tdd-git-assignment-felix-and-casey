@@ -70,7 +70,11 @@ def uprQuartile(intList):
 
 # Average of the squares of the differences of each number from the mean
 def variance(intList):
-    return 8.0165289256198
+    m1 = mean(intList)
+    sum = 0
+    for i in intList:
+        sum += (i - m1)**2
+    return (sum / len(intList))
 
 # Square root of the variance
 def stdDeviation(intList):
