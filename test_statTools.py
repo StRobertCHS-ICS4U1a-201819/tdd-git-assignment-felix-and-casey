@@ -67,10 +67,72 @@ def test_modeC2():
 
 def test_modeC3():
     assert ([0] == mode(cornerList3))
-'''
 # Median Tests:
+def test_medianB1():
+    assert (6 == median(intList1))
+
+def test_medianB2():
+    assert (-10 == median(intList2))
+
+def test_medianB3():
+    assert (2 == median(intList3))
+
+def test_medianB4():
+    assert (5 == median(intList4))
+
+def test_medianC1():
+    assert ("This is an empty list" == median(cornerList1))
+
+def test_meidanC2():
+    assert (3 == median(cornerList2))
+
+def test_medianC3():
+    assert (0 == median(cornerList3))
+
 # Range Tests:
+def test_rangeB1():
+    assert (9 == range(intList1))
+
+def test_rangeB2():
+    assert (200 == range(intList2))
+
+def test_rangeB3():
+    assert (9 == range(intList3))
+
+def test_rangeB4():
+    assert (19 == range(intList4))
+
+def test_rangeC1():
+    assert ("This is an empty list" == range(cornerList1))
+
+def test_rangeC2():
+    assert (10 == range(cornerList2))
+
+def test_rangeC3():
+    assert (0 == range(cornerList3))
+
 # Lower Quartile Tests:
+def test_lwrQuartileB1():
+    assert (3 == lwrQuartile(intList1))
+
+def test_lwrQuartileB2():
+    assert (-69 == lwrQuartile(intList2))
+
+def test_lwrQuartileB3():
+    assert (2 == lwrQuartile(intList3))
+
+def test_lwrQuartileB4():
+    assert (-5 == lwrQuartile(intList4))
+
+def test_lwrQuartileC1():
+    assert ("This is an empty list" == lwrQuartile(cornerList1))
+
+def test_lwrQuartileC2():
+    assert (0 == lwrQuartile(cornerList2))
+
+def test_lwrQuartileC3():
+    assert (0 == lwrQuartile(cornerList3))
+'''
 # Upper Quartile Tests:
 # Variance Tests:
 # Standard Deviation Tests:
