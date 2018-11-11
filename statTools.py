@@ -67,8 +67,9 @@ def lwrQuartile(intList):
 def uprQuartile(intList):
     try:
         intList.sort()
-        return intList[int(len(intList)*3/4)]
-    except: return None
+        print(intList[(len(intList)-1)//2 + 1:])
+        return median(intList[(len(intList)-1)//2 + 1:])
+    except: return 'This is an empty list'
 
 # Average of the squares of the differences of each number from the mean
 def variance(intList):

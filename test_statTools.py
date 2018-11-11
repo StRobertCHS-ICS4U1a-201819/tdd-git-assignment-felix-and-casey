@@ -83,12 +83,11 @@ def test_medianB4():
 def test_medianC1():
     assert ("This is an empty list" == median(cornerList1))
 
-def test_meidanC2():
+def test_medianC2():
     assert (3 == median(cornerList2))
 
 def test_medianC3():
     assert (0 == median(cornerList3))
-
 # Range Tests:
 def test_rangeB1():
     assert (9 == range(intList1))
@@ -147,6 +146,9 @@ def test_uprQuartileB4():
     assert (7 == uprQuartile(intList4))
 
 def test_uprQuartileC1():
-    assert (None == uprQuartile(cornerList1))
+    assert ('This is an empty list' == uprQuartile(cornerList1))
+
+def test_uprQuartileC2():
+    assert (7 == uprQuartile(cornerList2))
 # Variance Tests:
 # Standard Deviation Tests:
