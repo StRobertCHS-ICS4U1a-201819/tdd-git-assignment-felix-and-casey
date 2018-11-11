@@ -173,4 +173,7 @@ def test_varianceB3():
 
 def test_varianceB4():
     assert (33.83471074380165 == variance(intList4))
+
+def test_varianceC1():
+    assert ("This is an empty list" == variance(cornerList1))
 # Standard Deviation Tests:
