@@ -33,6 +33,14 @@ cornerList2 = [-1, 0, 1, 3, 5, 6, 8, 9]
 # Corner 3: No lower/upper quartile:
 cornerList3 = [0]
 
+'''
+# Custom List:
+customList = []
+numbers = int(input())
+for i in range (numbers):
+    customList.append(input())
+print("Mean: " + mean(customList)+"\nMode: " + mode(customList) + "\nMedian: " + median(customList) + "\nRange: " + range(customList) + "\nLower Quartile: " + lwrQuartile(customList) + "\nUpper Quartile: " +uprQuartile(customList) + "\nVariance: " + variance(customList) + "\nStandard Deviation: " + stdDeviation(customList))
+'''
 
 # Mean Tests:
 def test_meanB1():
